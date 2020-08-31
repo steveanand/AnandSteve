@@ -22,9 +22,9 @@ body
 }
 .user-box img
 {
-    border-radius: 20%;
-    width: 200px;
-    border: 1px solid white;
+    border-radius: 45%;
+    width: 250px;
+    border: 2px solid white;
 }
 .user-box h1
 {
