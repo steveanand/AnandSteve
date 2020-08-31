@@ -9,6 +9,8 @@
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="aos.css">
+    <script src="main.js"></script>
 </head>
 <body>
     
@@ -44,11 +46,13 @@
 
 <section id="header">
     <div class="container text-center">
-    <div class="user-box">
+    <div class="user-box" >
+        <div class="name" data-aos="fade-down" data-aos-delay="350">
     <img src="htmlcss/user1.png">  
     <h1>Anand Viswanathan</h1>
-    <p>Electronics and Communication Engineer</p>
+    <p>Electronics and Communication Engineering</p>
     </div>    
+        </div>
     </div> 
 </section>
     
@@ -63,41 +67,25 @@
     
 <div class="about container" id="about">
 <div class="row">
-<div class="col-md-6 text-center">
+<div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
 <img src="htmlcss/user4.png"  class="profile-img">
 </div>    
 <div class="col-md-6"><br>
-    <br>
+<div class="s" data-aos="zoom-out" data-aos-delay="200">
 <h3>WHO AM I ?</h3>
-<p>
-    I'm Anand, an Undergraduate Scholar in Electronics and Communication Engineering @ Jeppiaar Maamallan Engineering College affiliated to Anna University.
+<p>  I'm Anand, an Undergraduate Scholar in Electronics and Communication Engineering @ Jeppiaar Maamallan Engineering College affiliated to Anna University.
  I aspire to become a Software Engineer or Communication Engineer in one of the 
 topnotch Company which provides opportunities to enhance my skills and knowledge.
-
 </p>
-  <br>
-    <br>
-    <div class="skills-bar">
-    <p>C & C++</p>
-        <div class="progress">
-        <div class="progress-bar" style="width: 95%;">95%</div>
-        </div>
-    
-<p>Java</p>
-        <div class="progress">
-        <div class="progress-bar" style="width: 85%;">85%</div>
-        </div>    
-    
-<p>HTML & CSS</p>
-        <div class="progress">
-        <div class="progress-bar" style="width: 55%;">55%</div>
-        </div>
-        
-<p>Embedded C</p>
-<div class="progress">
-<div class="progress-bar" style="width: 15%;">15%</div>
-</div>        
-</div>
+    </div>
+  <div class="continer">
+    <ul>
+        <div class="a" data-aos="fade-left" data-aos-delay="350">  <li class="c">C & C++</li> </div>
+        <div class="j" data-aos="fade-left" data-aos-delay="550">  <li class="java">JAVA SCRIPT</li> </div>
+        <div class="h" data-aos="fade-left" data-aos-delay="750">  <li class="html">HTML & CSS</li> </div>
+        <div class="p" data-aos="fade-left" data-aos-delay="950">  <li class="python">PYTHON</li> </div>
+    </ul>
+    </div>
 </div>
 </div>    
 </div>    
@@ -107,7 +95,7 @@ topnotch Company which provides opportunities to enhance my skills and knowledge
     <div class="social-icons">
     <ul>
     <a href="https://www.facebook.com/steve.anand.330"><li><i class="fa fa-facebook"></i></li></a>
-    <!--<a href=""><li><i class="fa fa-envelope"></i></li></a>-->
+    <a href="https://www.linkedin.com/in/anand-viswanathan-3163a31b4/"><li><i class="fa fa-linkedin"></i></li></a>
     <a href="https://twitter.com/AnandSteve2"><li><i class="fa fa-twitter"></i></li></a>    
     </ul>
     </div>
@@ -118,7 +106,7 @@ topnotch Company which provides opportunities to enhance my skills and knowledge
 <div class="resume" id ="resume">
 <div class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6" data-aos="fade-right">
     
         <div class="text-center"><b>My Details</b></div>
 <ul class="timeline">
@@ -157,7 +145,7 @@ topnotch Company which provides opportunities to enhance my skills and knowledge
     
 
     
-<div class="col-md-6">
+<div class="col-md-6" data-aos="fade-left">
     <div class="text-center"><b>My Education</b></div>
 <ul class="timeline">
 <li>
@@ -196,27 +184,31 @@ topnotch Company which provides opportunities to enhance my skills and knowledge
 
 <div class="contact" id="contact">
 <div class="container text-center">
-<h1>Contact Me</h1>
-<p>Question's are not answered yet? I'm here to help!</p>
+<div class="C" data-aos="zoom-out" data-aos-delay="200">  <h1>Contact Me</h1>
+<p>Question's are not answered yet? I'm here to help!</p> </div>
 <div class="row">
     <div class="col-md-4">
+    <div class="P" data-aos="zoom-out" data-aos-delay="200">    
     <i class="fa fa-phone"></i>
         <p>+91 9840347194</p>
     </div>
-    
+    </div>
      <div class="col-md-4">
+         <div class="P" data-aos="zoom-out" data-aos-delay="200"> 
 <i class="fa fa-envelope"></i>
          <p>anand.v29101999@gmail.com</p>
     </div>
-    
+    </div>
      <div class="col-md-4">
-<i class="fa fa-twitter"></i>
-        <p>anand.v29101999@gmail.com</p>
+         <div class="P" data-aos="zoom-out" data-aos-delay="200"> 
+<i class="fa fa-linkedin"></i>
+        <p>Anand Viswanathan</p>
+    </div>
     </div>
     </div> 
    <a href="Anand_Viswanathan.pdf" download ><button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button> </a>
     </div>    
- </div>--->
+ </div>
 </section>
     
     
@@ -228,7 +220,10 @@ topnotch Company which provides opportunities to enhance my skills and knowledge
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script> 
     
-    
+<!---------------------------Animation----------------------------->
+
+    <script src="aos.js"></script>
+    <script src="main.js"></script>
 <!------------------------------End------------------------------------->
     
     

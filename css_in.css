@@ -23,8 +23,8 @@ body
 .user-box img
 {
     border-radius: 20%;
-    width: 250px;
-    border: 2px solid #006598;
+    width: 200px;
+    border: 1px solid white;
 }
 .user-box h1
 {
@@ -37,17 +37,7 @@ body
     color: #fff;
 }
 
-/*------------------------About---------------------*/
-.about
-{
-    padding-top: 100px;
-    margin-bottom: -30px;
-   /* background: #019ad2;*/
-}
-.profile-img
-{
-    height: 400px;
-}
+/*------------------------Navigator---------------------*/
 .nav-bar
 {
     top: 0;
@@ -80,20 +70,113 @@ body
 {
     color: #fff !important;
 }
-.skills-bar p
+
+
+
+/*------------------------About---------------------*/
+.about
 {
-    margin-bottom: 6px;
-    font-weight: 600;
+    padding-top: 100px;
+    margin-bottom: -30px;
+   /* background: #019ad2;*/
 }
-.progress
+.profile-img
 {
-    border-radius: 16px !important;
-    margin-bottom: 10px;
+    height: 400px;
 }
-.progress-bar
+.continer
 {
-    border-radius: 16px;
-    background: #000 !important;
+    width: 600px;
+    margin: 10px auto 0;
+    
+}
+
+.continer li
+{
+    position:relative;
+    list-style: none;
+    margin: 40px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.continer li:before
+{
+    content: "";
+    position: absolute;
+    top: calc(80% + 8px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: antiquewhite;
+    border-radius: 1000px;
+}
+
+.continer li:after
+{
+    content: "";
+    position: absolute;
+    top: calc(80% + 8px);
+    left: -30;
+    width: 0;
+    height: 10px;
+    background-color: black;
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.continer li.html:after
+{
+    animation-name: html;
+}
+
+@keyframes html
+{
+    to
+    {
+        width: 75%;
+    }
+}
+
+.continer li.c:after
+{
+    animation-name: c;
+}
+
+@keyframes c
+{
+    to
+    {
+        width: 95%;
+    }
+}
+
+.continer li.java:after
+{
+    animation-name: java;
+}
+
+@keyframes java
+{
+    to
+    {
+        width: 85%;
+    }
+}
+
+.continer li.python:after
+{
+    animation-name: python;
+}
+
+@keyframes python
+{
+    to
+    {
+        width: 40%;
+    }
 }
 
 /*-----------------Resume------------------*/
@@ -166,13 +249,13 @@ body
 }
 .contact .row
 {
-    padding: 30px 0;
-    font-size: 22px;
+    padding: 10px 0;
+    font-size: 20px;
 }
 .contact .col-md-4 .fa
 {
     padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .contact .btn
 {
