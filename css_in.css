@@ -77,7 +77,7 @@ body
 .about
 {
     padding-top: 100px;
-    margin-bottom: -30px;
+    padding-bottom: 50px;
    /* background: #019ad2;*/
 }
 .profile-img
@@ -86,12 +86,23 @@ body
 }
 .continer
 {
-    width: 450px;
-  /*  margin: 10px auto 0;*/
+    margin-bottom: 6px;
+    font-weight: 600;
+  /*  width: 450px;
+    margin: 10px auto 0;*/
     
 }
-
-.continer li
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress-bar
+{
+    border-radius: 16px;
+    background: black !important;
+}
+/*.continer li
 {
     position:relative;
     list-style: none;
@@ -177,7 +188,7 @@ body
     {
         width: 40%;
     }
-}
+}*/
 
 /*-----------------Resume------------------*/
 
